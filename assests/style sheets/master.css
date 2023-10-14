@@ -1,0 +1,531 @@
+.head {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../img/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  justify-content: center;
+  top: 0;
+  left: 0;
+}
+.head::before {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.43);
+}
+.head > header {
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+  position: absolute;
+}
+.head > header > * {
+  height: 100%;
+  width: 33%;
+}
+.head > header > nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.head > header > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.head > header > nav > ul > li {
+  width: 33%;
+  height: 100%;
+  list-style-type: none;
+}
+.head > header > nav > ul > li > a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-transform: capitalize;
+  font-family: inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.head > header > nav > ul > li > a:hover {
+  color: #fce4b8;
+}
+.head > header > figure {
+  display: flex;
+  justify-content: center;
+}
+.head > header > figure > a {
+  width: 12%;
+  height: 100%;
+}
+.head > header > figure > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.head > header > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.head > header > div > a {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.4s;
+  font-family: inter;
+}
+.head > header > div > a:hover {
+  color: #fce4b8;
+}
+.head > header > div > span {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: inter;
+  text-transform: capitalize;
+  color: white;
+}
+.head > h1 {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  color: white;
+  font-family: marcellus;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  font-weight: 100;
+}
+
+.artfestival {
+  width: 100%;
+  height: 45vh;
+  justify-content: center;
+}
+.artfestival > p {
+  font-family: marcellus;
+  text-transform: capitalize;
+  font-size: 45px;
+  width: 57%;
+  display: flex;
+  align-items: center;
+  height: 80%;
+  text-align: center;
+  color: #3a3a3a;
+}
+.artfestival > div {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.artfestival > div > a {
+  text-decoration: none;
+  font-family: inter;
+  text-transform: capitalize;
+  color: #3a3a3a;
+  font-size: 18px;
+  border: 1px solid #3a3a3a;
+  transition: 0.4s;
+  padding: 15px 30px;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 0 #3a3a3a;
+  transition: 0.4s;
+}
+.artfestival > div > a:hover {
+  box-shadow: inset 0 0 0 30px #3a3a3a;
+  color: white;
+}
+
+.exhibition {
+  width: 100%;
+  height: 200vh;
+  position: relative;
+  z-index: 1;
+}
+.exhibition > h2 {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3a3a3a;
+  font-family: marcellus;
+  font-size: 70px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+.exhibition > div {
+  width: 100%;
+  height: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.exhibition > div > figure {
+  width: 650px;
+  height: 700px;
+  margin: 20px;
+  display: flex;
+  position: relative;
+}
+.exhibition > div > figure > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.exhibition > div > figure > a:hover > figcaption {
+  background-color: transparent;
+}
+.exhibition > div > figure > a:hover > figcaption > p {
+  top: 0;
+  opacity: 0;
+}
+.exhibition > div > figure > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.exhibition > div > figure > a > figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.449);
+  transition: 0.4s;
+}
+.exhibition > div > figure > a > figcaption > p {
+  width: 475px;
+  height: 350px;
+  position: absolute;
+  left: calc(50% - 237px);
+  top: calc(50% - 175px);
+  font-size: 50px;
+  color: white;
+  text-transform: capitalize;
+  font-family: marcellus;
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.halls {
+  width: 100%;
+  height: 260vh;
+  background-color: #fce4b8;
+  justify-content: center;
+  align-content: end;
+  -webkit-clip-path: ellipse(200vh 99% at 50% 100%);
+          clip-path: ellipse(200vh 99% at 50% 100%);
+}
+.halls > div {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.halls > div > a {
+  text-decoration: none;
+  font-family: inter;
+  text-transform: capitalize;
+  color: #3a3a3a;
+  font-size: 18px;
+  border: 1px solid #3a3a3a;
+  transition: 0.4s;
+  padding: 15px 30px;
+  border-radius: 7px;
+  box-shadow: inset 0 0 0 0 #3a3a3a;
+  transition: 0.4s;
+}
+.halls > div > a:hover {
+  box-shadow: inset 0 0 0 30px #3a3a3a;
+  color: white;
+}
+.halls > figure {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.halls > figure > a {
+  width: 20%;
+  height: 70%;
+}
+.halls > figure > a > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.halls > h2 {
+  width: 50%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  font-weight: 100;
+  text-align: center;
+  font-family: marcellus;
+  font-size: 50px;
+  color: #3a3a3a;
+}
+.halls > span {
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+}
+.halls > span > div {
+  width: 350px;
+  height: calc(100% - 40px);
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+.halls > span > div:nth-of-type(2) {
+  height: calc(100% - 100px);
+  align-items: start;
+}
+.halls > span > div > figure {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.halls > span > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 160px;
+}
+.halls > span > div > figure > figcaption {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  font-family: marcellus;
+  text-transform: capitalize;
+  font-size: 30px;
+  color: #3a3a3a;
+}
+.halls > section {
+  width: 100%;
+  height: 100vh;
+  -webkit-clip-path: ellipse(140vh 100% at 50% 100%);
+          clip-path: ellipse(140vh 100% at 50% 100%);
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  align-items: start;
+}
+.halls > section::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 75, 75, 0.56);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.halls > section > h2 {
+  width: 100%;
+  height: 40%;
+  color: white;
+  font-family: marcellus;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.pricing {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  justify-content: center;
+}
+.pricing > div {
+  width: 650px;
+  height: 550px;
+  position: absolute;
+  justify-content: center;
+  top: -350px;
+}
+.pricing > div:nth-of-type(1) {
+  background-color: #c5a670;
+  right: 50%;
+}
+.pricing > div:nth-of-type(2) {
+  background-color: #3e598e;
+  left: 50%;
+}
+.pricing > div > figure {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.pricing > div > figure > img {
+  width: 60%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 150px 150px 0 0;
+}
+.pricing > div > h3 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: marcellus;
+  font-size: 45px;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+.pricing > div > p {
+  width: 65%;
+  height: 20%;
+  font-family: inter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+}
+.pricing > div > div {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing > div > div > a {
+  text-decoration: none;
+  color: white;
+  font-family: inter;
+  text-transform: capitalize;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 7px;
+  transition: 0.4s;
+  box-shadow: inset 0 0 0 0 white;
+}
+.pricing > div > div > a:hover {
+  color: black;
+  box-shadow: inset 0 0 0 30px white;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  justify-content: center;
+}
+footer > ul {
+  width: 33%;
+  height: 100%;
+  align-content: center;
+  justify-content: start;
+}
+footer > ul:nth-of-type(2) {
+  justify-content: end;
+}
+footer > ul:nth-of-type(2) > li {
+  margin-right: 99px;
+}
+footer > ul:nth-of-type(2) > li > a {
+  justify-content: end;
+}
+footer > ul > li {
+  width: 51%;
+  height: 20%;
+  list-style-type: none;
+  margin-left: 99px;
+}
+footer > ul > li > a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: black;
+  font-family: inter;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: 0.4s;
+  font-weight: 500;
+}
+footer > ul > li > a:hover {
+  color: #3e598e;
+}
+footer > div {
+  width: 33%;
+  height: 100%;
+}
+footer > div > figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > div > figure > img {
+  width: 20%;
+  height: 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer > div > div {
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+footer > div > div > a {
+  text-decoration: none;
+  color: black;
+  font-family: inter;
+  font-size: 22px;
+  text-transform: capitalize;
+}/*# sourceMappingURL=master.css.map */
